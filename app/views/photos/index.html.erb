@@ -1,0 +1,10 @@
+<h1>Hola desde el index de las photos</h1>
+
+<% @photos.each do |p| %>
+    <div>
+        <h2>
+            <%= p.title %>
+        </h2>
+        <%= image_tag p.image_url %>
+    </div>
+<% end %>
